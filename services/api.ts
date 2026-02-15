@@ -5,8 +5,8 @@
  * into logical groups (auth, treasures, progress, leaderboard, admin).
  */
 
-/** Base URL for all API requests — uses env var in production, falls back to localhost for dev */
-const API_BASE = (import.meta as any).env?.VITE_API_URL || 'http://localhost:5001/api';
+/** Base URL for all API requests — relative path in production (proxied by Netlify), absolute in dev */
+const API_BASE = (import.meta as any).env?.VITE_API_URL || (window.location.hostname === 'localhost' ? 'http://localhost:5001/api' : '/api');
 
 // ─── Token Management ───────────────────────────────────────────────────────
 

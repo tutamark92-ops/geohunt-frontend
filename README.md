@@ -1,1 +1,0 @@
-# geohunt-frontend
