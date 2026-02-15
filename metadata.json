@@ -1,0 +1,8 @@
+{
+  "name": "GeoHunt: Campus Treasure Explorer",
+  "description": "An interactive geolocation-based treasure hunt for university open days, featuring map navigation, QR scanning, and gamified campus exploration.",
+  "requestFramePermissions": [
+    "camera",
+    "geolocation"
+  ]
+}
